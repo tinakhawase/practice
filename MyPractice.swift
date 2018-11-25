@@ -6,6 +6,7 @@
 //
 
 import Foundation
+// program for Counting days in month
 
 func DaysInMonth (month: Int) {
     
@@ -21,7 +22,7 @@ func DaysInMonth (month: Int) {
 DaysInMonth(month: 1)
 
 
-
+// another
 func daysInMonthWithDictionary (month:Int ){
     let  monthCount = [  1 : [31] ,
                          2: [28],3:[31],4 : [30] ,
@@ -31,6 +32,8 @@ func daysInMonthWithDictionary (month:Int ){
     }
 }
 daysInMonthWithDictionary(month: 12)
+
+//practice
 
 let array1 = [1, 2, 3]
 let array2 = [4, 5, 6]
@@ -46,7 +49,7 @@ let numberArrayForFlatmap = [[1.2, 3.4,7.1],[3.9,1.2,2.7]]
 let flatmapArrayOfNumbers = numberArrayForFlatmap.compactMap { (array) -> ([Double]) in return array }
 
 
-
+// Program 2. Mergearrays
 func mergeArraynew ( one: [Double], two: [Double]){
     let collections = [one, two]
     var newcollections = collections.flatMap {
@@ -68,7 +71,7 @@ var flattenedArray = arrayOfArrays.flatMap { array in
 print(flattenedArray)
 
 
-
+//Program 3. MinMax arrays
 func maxMinOfArray (Arry: [Int]){
     //    let Arry = [11, 2, 7, 5, 21]
     var result = Arry.sorted(){
@@ -88,7 +91,7 @@ maxMinOfArray(Arry: Arry)
 
 
 
-
+//Program 4. Farhenite to celsius
 func fahrenheitToCelsius(tempInF:Double) ->Double {
     let celsius = (tempInF - 32.0) * (5.0/9.0)
     print("The temperature is : \(celsius) degree celsius .")
@@ -97,7 +100,7 @@ func fahrenheitToCelsius(tempInF:Double) ->Double {
 fahrenheitToCelsius(tempInF:100)
 
 
-
+//Program 5. Average of Array
 func average( intarray: [Int]){
     //var intArray = [10, 15, 5, 7, 13]
     let sumArray = intArray.reduce(0, +)
@@ -107,6 +110,7 @@ func average( intarray: [Int]){
 let intArray = [10, 15, 5, 7, 13]
 average(intarray: intArray)
 
+//Program 6. SquareRoot 
 func squareFootOfNumber(number: Int) ->Double {
     let n = number
     let r = sqrt(Double(n))
